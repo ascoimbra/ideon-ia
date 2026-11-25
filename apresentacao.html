@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Conheça o ideon: um espaço para conversar, organizar ideias e criar com inteligência artificial local.">
+  <title>ideon — espaço para suas ideias</title>
+  <link rel="icon" type="image/png" href="Símbolo abstrato preto com raios arredondados.png">
+  <link rel="stylesheet" href="apresentacao.css">
+  <script src="apresentacao.js" defer></script>
+  <script src="cursor.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+  <header class="topo">
+    <a class="marca" href="#" aria-label="ideon, início"><img src="Símbolo abstrato preto com raios arredondados.png" alt="" width="34" height="34">ideon<span>IA</span></a>
+    <nav aria-label="Navegação principal"><div class="navegacao-abas" aria-label="Explore a apresentação"><a id="pagina-inicio" href="#visao-geral">Início</a><a id="pagina-recursos" href="#recursos">Recursos</a><a id="pagina-como" href="#como-funciona">Como funciona</a><a id="pagina-sobre" href="#sobre">Sobre</a></div></nav>
+    <a class="botao pequeno" href="/app">Abrir ideon</a>
+  </header>
+  <main id="conteudo">
+    <div class="controle-movimento"><button id="alternar-movimento" type="button" aria-pressed="false" hidden>Pausar animações</button></div>
+    <section id="visao-geral" class="hero" aria-labelledby="titulo" data-pagina>
+      <div class="ideias-em-movimento" aria-hidden="true">
+        <svg class="orbitas" viewBox="0 0 400 180" fill="none"><ellipse cx="200" cy="90" rx="164" ry="52"/><ellipse cx="200" cy="90" rx="133" ry="76"/><path class="traco-orbita" d="M36 90a164 52 0 1 0 328 0a164 52 0 1 0-328 0"/></svg>
+        <img class="logo-em-movimento" src="Símbolo abstrato preto com raios arredondados.png" alt="" width="82" height="82">
+        <span class="ideia-flutuante ideia-chat">Conversar</span><span class="ideia-flutuante ideia-work">Organizar</span><span class="ideia-flutuante ideia-code">Criar</span>
+      </div>
+      <p class="sobretitulo">UM ESPAÇO PARA PENSAR E CRIAR</p>
+      <h1 id="titulo"><span class="linha-titulo">Toda grande ideia</span><span class="linha-titulo">começa com <em>uma conversa.</em></span></h1>
+      <p class="introducao">Uma pergunta, um plano, uma linha de código.<br>O ideon acompanha o que você quer colocar no mundo.</p>
+      <div class="acoes"><a class="botao" href="/app">Começar uma conversa</a><a class="link" href="#recursos">Conhecer os recursos</a></div>
+      <div class="vitrine">
+        <div class="vitrine-topo"><span>SEU ESPAÇO, SEU RITMO</span><span>Prévia ilustrativa</span></div>
+        <div class="abas" role="tablist" aria-label="Explore os modos do ideon">
+          <button id="aba-chat" role="tab" aria-selected="true" aria-controls="previa" data-modo="chat">Chat</button>
+          <button id="aba-work" role="tab" aria-selected="false" aria-controls="previa" tabindex="-1" data-modo="work">Work</button>
+          <button id="aba-code" role="tab" aria-selected="false" aria-controls="previa" tabindex="-1" data-modo="code">ideon Code</button>
+        </div>
+        <div id="previa" role="tabpanel" aria-labelledby="aba-chat" tabindex="0">
+          <img class="simbolo" src="Símbolo abstrato preto com raios arredondados.png" alt="Símbolo do ideon" width="72" height="72">
+          <h2 id="previa-titulo">O que vamos descobrir hoje?</h2>
+          <p id="previa-descricao">Um lugar para perguntar, aprender e dar espaço à curiosidade.</p>
+          <div class="mensagem-exemplo"><span id="previa-prompt">Me ajude a transformar uma ideia em um começo.</span><div><span id="previa-contexto">Chat · Médio</span><span class="enviar-decorativo" aria-hidden="true">↑</span></div></div>
+          <div class="sugestoes" id="previa-sugestoes"><span>Escrever</span><span>Aprender</span><span>Explorar ideias</span></div>
+          <div class="resposta-demo" id="resposta-demo" aria-label="Resposta ilustrativa">
+            <span class="rotulo-demo">DA IDEIA AO PRIMEIRO PASSO</span>
+            <div id="resposta-demo-conteudo"><p>Comece pelo que desperta sua curiosidade.</p><p>Dê um nome à ideia e encontre uma primeira pergunta.</p><p>Vamos desenvolver esse começo juntos.</p></div>
+          </div>
+          <button class="repetir-demo" id="repetir-demo" type="button" hidden>Repetir animação</button>
+        </div>
+        <p class="vitrine-rodape">Três maneiras de criar. A mesma liberdade para começar.</p>
+      </div>
+    </section>
+    <section id="recursos" class="recursos secao" aria-labelledby="titulo-recursos" data-pagina>
+      <div class="abertura abertura-ilustrada">
+        <div><p class="sobretitulo">RECURSOS</p><h2 id="titulo-recursos">Da primeira pergunta<br>ao próximo passo.</h2><p>Escolha um espaço que combine com o momento da sua ideia. Uma conversa encontra estrutura, e a estrutura ganha vida.</p></div>
+        <div class="cena cena-recursos" role="img" aria-label="Ilustração animada: uma ideia se conecta a uma conversa, um plano e um trecho de código.">
+          <span class="legenda-cena">01 / POSSIBILIDADES EM MOVIMENTO</span>
+          <svg class="conexoes-cena" viewBox="0 0 480 320" fill="none" aria-hidden="true"><path d="M240 155C150 155 165 90 90 90M240 155C330 155 315 90 390 90M240 155V260"/><path class="sinal-cena" d="M90 90C165 90 150 155 240 155S315 90 390 90M240 155V260"/></svg>
+          <div class="nucleo-cena"><img src="Símbolo abstrato preto com raios arredondados.png" alt="" width="56" height="56"></div>
+          <div class="cartao-cena cartao-conversa"><span class="micro-rotulo">CHAT</span><span class="balao-cena">E se a gente…</span><span class="pontos-cena"><i></i><i></i><i></i></span></div>
+          <div class="cartao-cena cartao-plano"><span class="micro-rotulo">WORK</span><span class="tarefa-cena">✓ Uma ideia</span><span class="tarefa-cena">✓ Um plano</span><span class="progresso-cena"><i></i></span></div>
+          <div class="cartao-cena cartao-codigo"><span class="micro-rotulo">IDEON CODE</span><code>ideia → criar()</code><span class="cursor-codigo"></span></div>
+          <span class="nota-cena">Uma ideia. Três caminhos.</span>
+        </div>
+      </div>
+      <div class="modos">
+        <article><span class="icone" aria-hidden="true">“</span><h3>Converse no Chat.</h3><p>Explore assuntos, peça uma explicação ou encontre as palavras que faltavam. A conversa pode começar pequena.</p><a href="/app#inicio">Abrir Chat</a></article>
+        <article><span class="icone" aria-hidden="true">▤</span><h3>Dê forma no Work.</h3><p>Organize um objetivo, desenvolva um texto e transforme ideias soltas em planos com próximas etapas.</p><a href="/app#modo=work">Abrir Work</a></article>
+        <article><span class="icone codigo" aria-hidden="true">{ }</span><h3>Construa no Code.</h3><p>Traga seu código, descreva um problema e trabalhe em uma solução. Um espaço dedicado a desenvolver e entender.</p><a href="/app#modo=code">Abrir ideon Code</a></article>
+      </div>
+      <div class="detalhes"><p><strong>O ritmo é seu.</strong> Escolha o modelo e ajuste entre cinco níveis de esforço.</p><p><strong>Mais contexto, melhores perguntas.</strong> Anexe arquivos de texto ou use a voz quando seu navegador oferecer suporte.</p></div>
+      <div class="catalogo-modelos">
+        <div class="cabecalho-modelos"><p class="sobretitulo">CONHEÇA OS MODELOS</p><h2>Diferentes tamanhos.<br>O mesmo espaço para criar.</h2><p>Nous, Phos e Versos são os nomes dos perfis locais do ideon. A disponibilidade depende dos modelos instalados no Ollama.</p></div>
+        <div class="grade-modelos">
+          <article><span class="numero-modelo">↗</span><h3>Padrão</h3><span class="etiqueta-modelo">Modelo local recomendado</span><p>Usa a configuração do aplicativo e os modelos disponíveis. No Chat, essa escolha acontece automaticamente.</p></article>
+          <article><span class="numero-modelo">01</span><h3>Nous</h3><span class="etiqueta-modelo">Qwen 3.5 · 4B</span><p>O maior dos três perfis Qwen do ideon. Uma opção para explorar tarefas com mais capacidade, conforme os recursos do computador.</p></article>
+          <article><span class="numero-modelo">02</span><h3>Phos</h3><span class="etiqueta-modelo">Qwen 3.5 · 2B</span><p>Um tamanho intermediário para o dia a dia. Experimente um equilíbrio entre capacidade e consumo de recursos.</p></article>
+          <article><span class="numero-modelo">03</span><h3>Versos</h3><span class="etiqueta-modelo">Qwen 3.5 · 0.8B</span><p>O perfil mais compacto. Uma alternativa leve quando você quer usar menos memória em tarefas mais simples.</p></article>
+        </div>
+        <p class="nota-modelos">No Work e no Code, você pode trocar o perfil. O esforço tem cinco níveis: Pouco, Médio, Alto, Extra alto e Ultra. O desempenho varia com o modelo e o computador.</p>
+      </div>
+    </section>
+    <section id="como-funciona" class="como secao" aria-labelledby="titulo-como" data-pagina>
+      <div><p class="sobretitulo">COMO FUNCIONA</p><h2 id="titulo-como">Uma interface leve.<br>IA no seu computador.</h2><p>O ideon se conecta ao Ollama para usar modelos locais. Nesta versão, o servidor do ideon e o Ollama precisam estar em execução no seu computador.</p><a class="link" href="/app">Entrar no aplicativo</a>
+        <div class="cena cena-processo" role="img" aria-label="Ilustração animada do caminho de uma pergunta: ideon, modelo local no Ollama e resposta.">
+          <span class="legenda-cena">02 / POR DENTRO DA CONVERSA</span>
+          <svg class="circuito-processo" viewBox="0 0 480 290" fill="none" aria-hidden="true"><path d="M95 100H385V210H95Z"/><path class="pacote-processo" d="M95 100H385V210H95Z"/></svg>
+          <div class="estacao estacao-ideon"><img src="Símbolo abstrato preto com raios arredondados.png" alt="" width="34" height="34"><span>ideon</span></div>
+          <div class="estacao estacao-modelo"><span class="chip-modelo" aria-hidden="true">✳</span><span>Ollama<small>modelo local</small></span></div>
+          <span class="rotulo-pergunta">Sua pergunta →</span><span class="rotulo-resposta">← Uma nova resposta</span>
+          <span class="nota-cena"><i class="luz-local"></i> O caminho acontece no seu computador</span>
+        </div>
+      </div>
+      <div class="fluxo"><div><span class="linha-fluxo" aria-hidden="true"></span><h3>Você traz a ideia</h3><p>Escolha Chat, Work ou Code e conte o que precisa.</p></div><div><span class="linha-fluxo" aria-hidden="true"></span><h3>O modelo trabalha com seu contexto</h3><p>A conexão local com o Ollama gera a resposta usando o modelo selecionado.</p></div><div><span class="linha-fluxo" aria-hidden="true"></span><h3>A conversa continua</h3><p>Refine o resultado. Seu histórico fica salvo neste navegador e pode ser exportado nas configurações.</p></div></div>
+    </section>
+    <section id="sobre" class="sobre secao" aria-labelledby="titulo-sobre" data-pagina>
+      <div class="cena cena-sobre" role="img" aria-label="Ilustração animada de um pequeno estúdio de criação: um caderno, uma janela de código e o símbolo do ideon conectados por uma órbita.">
+        <span class="legenda-cena">03 / UM PEQUENO ESTÚDIO, MUITAS IDEIAS</span>
+        <svg class="orbita-estudio" viewBox="0 0 600 310" fill="none" aria-hidden="true"><ellipse cx="300" cy="160" rx="245" ry="98"/><ellipse class="orbita-inclinada" cx="300" cy="160" rx="185" ry="115"/><path class="sinal-estudio" d="M55 160a245 98 0 1 0 490 0a245 98 0 1 0-490 0"/></svg>
+        <div class="folha-estudio"><span class="micro-rotulo">PRÓXIMA IDEIA</span><span>Imaginar.<br>Experimentar.<br>Refinar.</span><i></i><i></i></div>
+        <div class="assinatura-estudio"><img src="Símbolo abstrato preto com raios arredondados.png" alt="" width="82" height="82"><span>feito de curiosidade</span></div>
+        <div class="janela-estudio"><span class="pontos-janela">● ● ●</span><code>ideia<br>&nbsp;↳ tentativa<br>&nbsp;&nbsp;↳ descoberta<span class="cursor-codigo"></span></code></div>
+        <span class="nota-cena">Do primeiro rascunho ao próximo começo.</span>
+      </div>
+      <p class="sobretitulo">FEITO COM CURIOSIDADE, NO PRÓPRIO RITMO</p>
+      <h2 id="titulo-sobre">Uma equipe de uma pessoa.<br>Um mundo de ideias.</h2>
+      <p>O ideon é um projeto independente brasileiro, criado por uma equipe de uma pessoa. Nasceu da vontade de reunir conversa, trabalho e criação em um lugar simples de usar e agradável de explorar.</p>
+      <p>A proposta é seguir construindo, ouvindo e refinando. Porque uma boa ideia também merece espaço para crescer.</p>
+      <a class="botao" href="/app">Dê espaço à sua próxima ideia</a>
+    </section>
+  </main>
+  <footer><a class="marca" href="#">ideon<span>IA</span></a><p>Conversa. Intenção. Criação.</p><a href="/app">Abrir aplicativo</a></footer>
+</body>
+</html>

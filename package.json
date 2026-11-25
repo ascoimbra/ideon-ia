@@ -1,0 +1,13 @@
+{
+  "name": "ideon-ia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Assistente pessoal local com Chat, Work e ideon Code",
+  "scripts": {
+    "start": "node iniciar.js",
+    "test": "node --test tests/*.test.js",
+    "test:ia": "node verificar-ia.js",
+    "check": "node --check app.js && node --check cursor.js && node --check painel.js && node --check renderizador.js && node --check servidor.js && node --check iniciar.js && node --check apresentacao.js && node --check responsivo.js"
+  },
+  "engines": { "node": ">=22" }
+}

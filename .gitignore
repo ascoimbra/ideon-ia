@@ -1,0 +1,47 @@
+# Dependencias instaladas
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Configuracao local e credenciais
+.env
+.env.*
+!.env.example
+.ideon-config.json
+*.local.json
+.vscode/settings.json
+.vscode/launch.json
+*.code-workspace
+
+# Resultados locais de verificacao
+/verificacao-*.json
+/verificacao-ia.json
+/verificacao-coder.json
+/verificacao-raciocinio.json
+/verificacao-seletor.json
+
+# Logs, temporarios e caches
+*.log
+logs/
+tmp/
+temp/
+.cache/
+.ideon-cache/
+
+# Pesos e caches de modelos de IA (incluindo Ollama)
+.ollama/
+ollama-models/
+models/
+*.gguf
+*.safetensors
+*.onnx
+*.pt
+*.pth
+*.bin
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
